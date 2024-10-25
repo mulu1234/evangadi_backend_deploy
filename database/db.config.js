@@ -10,7 +10,7 @@ const connection = mysql2.createPool({
   database: process.env.DB_DATABASE,
   port: process.env.DB_PORT || 3306,
   connectionLimit: 10,
-  connectTimeout: 10000,
+  connectTimeout: 30000,
 });
 
 // Connect to the database
